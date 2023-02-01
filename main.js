@@ -39,21 +39,21 @@ $(document).ready(function () {
     // ------------------------------ Typing Text Animation ------------------------------ //
   
     var typed = new Typed(".typing", {
-      strings: ["Frontend Dev", "Software Engineer", "Gym addict", "Photographer ", "Fulltime Boomer"],
+      strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
       typeSpeed: 100,
-      backSpeed: 60,
+      backSpeed: 70,
       loop: true
     });
   
     var typed = new Typed(".typing-2", {
-      strings: ["Frontend Dev", "Software Engineer", "Gym addict", "Photographer ", "Fulltime Boomer"],
-      typeSpeed: 100,
-      backSpeed: 60,
+      strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
+      typeSpeed: 200,
+      backSpeed: 70,
       loop: true
     });
   
-    // ------------------------------ Owl Carousel ------------------------------ //
-  
+  //bruhhhhhhhhhhhhhhhhhhhhhh
+
     $(".carousel").owlCarousel({
       margin: 20,
       loop: true,
