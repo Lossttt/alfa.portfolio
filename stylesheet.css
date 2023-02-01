@@ -50,12 +50,7 @@
   
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #999999, rgb(155, 155, 155), rgb(221, 221, 221));
-  }
-  
-  /* --x--------------------------- Linear-Gradient ---------------------------x-- */
-  
-  /* --x--------------------------- Custom Scroll Bar ---------------------------x-- */
-  
+  }  
   /* ------------------------------ Simillar ------------------------------ */
   
   section {
@@ -132,7 +127,7 @@
   
   .navbar.sticky {
     padding: 15px 0;
-    background: #000000;
+    background: #111;
   }
   
   .navbar .max-width {
@@ -142,14 +137,14 @@
   }
   
   .navbar .logo a {
-    color: #fff;
+    color: rgb(183, 200, 233);
     font-size: 35px;
     font-weight: 600;
   }
   
-  /* ------------------------------ Nav Logo Span Linear-Gradient ------------------------------  */
+  /* ------------------------------  Logo Span Gradient ------------------------------  */
   .navbar .logo a span {
-    background: linear-gradient(135deg, #711bd3, rgb(181, 171, 218), rgb(44, 2, 143));
+    background: linear-gradient(135deg, #bfaad6, rgb(151, 134, 209), rgb(128, 95, 204));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
@@ -162,6 +157,8 @@
   .navbar .menu li {
     list-style: none;
     display: inline-block;
+    display: table-cell; 
+    position: relative; 
   }
   
   .navbar .menu li a {
@@ -174,16 +171,15 @@
   }
   
   .navbar .menu li a:hover {
-    color: #1e3551;
+    color: #12427c;
   }
   
   .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: #12427c;
   }
   
-  /* --x--------------------------- Navbar ---------------------------x-- */
   
-  /* ------------------------------ Menu Btn ------------------------------ */
+  /* ------------------------------ Menu Button ------------------------------ */
   
   .menu-btn {
     color: #fff;
@@ -196,7 +192,7 @@
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #1e3551;
+    background: #021b38;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -221,15 +217,12 @@
   .scroll-up-btn:hover {
     filter: brightness(90%);
   }
-  
-  /* --x--------------------------- Menu Btn ---------------------------x-- */
-  
+    
   /* ------------------------------ Home ------------------------------ */
   
   .home {
     display: flex;
-    background: url(/images/bg-image.jpg) no-repeat
-      center;
+    background: url(/images/IMG_1187.jpg) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -249,26 +242,26 @@
   
   .home .home-content .text-1 {
     font-size: 27px;
-    color: rgb(84, 82, 158);
+    color: rgb(255, 255, 255);
   }
   
   .home .home-content .text-2 {
-    font-size: 75px;
+    font-size: 85px;
     font-weight: 600;
     margin-left: -3px;
-    color: rgb(19, 18, 65);
+    color: rgb(177, 177, 245);
   }
   
   .home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
-    color: rgb(84, 82, 158);
+    color: rgb(255, 255, 255);
   }
   
   /* Linear Gradient */
   .home .home-content .text-3 span {
     color: #1e3551;
-    background: linear-gradient(135deg, #b287e4, rgb(144, 123, 221), rgb(44, 2, 143));
+    background: linear-gradient(135deg, #bfaad6, rgb(151, 134, 209), rgb(128, 95, 204));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
@@ -276,7 +269,7 @@
   
   .home .home-content a {
     display: inline-block;
-    background: #1e3551;
+    background: #1e3551a2;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -292,13 +285,11 @@
     background: none;
     animation: pulsate 1s ease-in-out;
   }
-  
-  /* --x--------------------------- Home ---------------------------x-- */
-  
-  /* ------------------------------ About ------------------------------ */
+    
+  /* ------------------------------ About Me ------------------------------ */
   
   .about {
-    background: radial-gradient(#e1efff, white);
+    background: radial-gradient(#ffffff, rgb(218, 235, 238));
   }
   .about .title::after {
     content: "—Who I Am ?—";
@@ -332,7 +323,7 @@
   /* Linear Gradiant */
   .about .about-content .right .text span {
     /* color: #1e3551; */
-    background: linear-gradient(135deg, #b287e4, rgb(144, 123, 221), rgb(44, 2, 143));
+    background: linear-gradient(135deg, #bfaad6, rgb(151, 134, 209), rgb(128, 95, 204));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -343,7 +334,7 @@
   
   .about .about-content .right a {
     display: inline-block;
-    background: #1e3551;
+    background: #1e3551;;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -359,9 +350,7 @@
     background: none;
     animation: pulsate 1s ease-in-out;
   }
-  
-  /* --x--------------------------- About ---------------------------x-- */
-  
+    
   /* ------------------------------ Service ------------------------------ */
   
   .services,
@@ -378,7 +367,8 @@
   .services .title::after,
   .projects .title::after {
     background: #111;
-    content: "What I Provide ?";
+    content: "What do I do ?";
+    color: #b6d9ee;
   }
   
   .services .serv-content .card {
@@ -406,7 +396,7 @@
   .services .serv-content .card i {
     font-size: 50px;
     color: #888e8d;
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: linear-gradient(135deg, #bfaad6, rgb(151, 134, 209), rgb(128, 95, 204));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
@@ -421,13 +411,11 @@
     font-weight: 500;
     margin: 10px 0 7px 0;
   }
-  
-  /* --x--------------------------- Service ---------------------------x-- */
-  
+    
   /* ------------------------------ Skills ------------------------------ */
   
   .skills {
-    background: radial-gradient(#e1efff, white);
+    background: radial-gradient(#ffffff, rgb(218, 235, 238));
   }
   .skills .title::after {
     content: "—What I Know ?—";
@@ -473,7 +461,7 @@
   
   .intern::before,
   .project::before {
-    content: "✪ ";
+    content: "✓ ";
     color: #1e3551;
   }
   
@@ -529,9 +517,7 @@
     width: 30%;
   }
   
-  
-  /* --x--------------------------- Skills ---------------------------x-- */
-  
+    
   /* ------------------------------ Projects ------------------------------ */
   
   .projects .title::after {
@@ -591,7 +577,7 @@
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none !important;
+    outline: none ;
     border-radius: 50%;
     border: 2px solid #888c8d !important;
     transition: all 0.3s ease;
@@ -606,13 +592,11 @@
   .owl-dot:hover {
     background: #18365a !important;
   }
-  
-  /* --x--------------------------- Projects ---------------------------x-- */
-  
+    
   /* ------------------------------ Contact ------------------------------ */
   
   .contact {
-    background: radial-gradient(#e1efff, white);
+    background: radial-gradient(#ffffff, rgb(218, 235, 238));
   }
   
   .contact .title::after {
@@ -730,9 +714,7 @@
     background: none;
     animation: pulsate 1s ease-in-out;
   }
-  
-  /* --x--------------------------- Contact ---------------------------x-- */
-  
+    
   /* ------------------------------ Social ------------------------------ */
   
   .col-4 {
@@ -744,8 +726,8 @@
     left: 20%;
     padding: 0;
     margin: 0;
-    transform: translate(-50%, -50%);
     display: flex;
+    margin-left: 100px;
   }
   
   .social-menu ul li {
@@ -784,7 +766,7 @@
   }
   
   .social-menu ul li:nth-child(1) a:hover {
-    background-color: #131418;
+    background-color: #474950;
   }
   
   .social-menu ul li:nth-child(2) a:hover {
@@ -792,18 +774,18 @@
   }
   
   .social-menu ul li:nth-child(3) a:hover {
-    background-color: #e4405f;
+    background-color: #0f3f75;
   }
   .social-menu ul li:nth-child(4) a:hover {
-    background-color: #1da1f2;
+    background-color: #45c045;
   }
   
   .social-menu ul li:nth-child(5) a:hover {
-    background-color: #e33054;
+    background-color: #3033e3;
   }
   
   .social-menu ul li:nth-child(6) a:hover {
-    background-color: #fc4f08;
+    background-color: #6320cf;
   }
   
   .fa-brands {
@@ -813,15 +795,6 @@
   .fa-solid {
     color: #fff;
   }
-  
-  /* --x--------------------------- Social ---------------------------x-- */
-  
-  /* iframe{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 999;
-  } */
   
   /* ------------------------------ Footer ------------------------------ */
   
@@ -840,10 +813,8 @@
   footer span a:hover {
     text-decoration: underline;
   }
-  
-  /* --x--------------------------- Footer ---------------------------x-- */
-  
-  /* ------------------------------ Media Query ------------------------------ */
+    
+  /* ------------------------------ Responsive ------------------------------ */
   @keyframes pulsate {
     0% {
       box-shadow: 0 0 25px #888e8d, 0 0 50px #3b511e;
@@ -980,6 +951,4 @@
       line-height: 38px;
     }
   }
-  
-  /* --x--------------------------- Media Query ---------------------------x-- */
-  
+    
