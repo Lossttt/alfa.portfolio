@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-      // ------------------------------ sticky navbar on scroll script ------------------------------ //
+      // ------------------------------ navbar on scroll script ------------------------------ //
       if (this.scrollY > 20) {
         $(".navbar").addClass("sticky");
       } else {
@@ -15,16 +15,16 @@ $(document).ready(function () {
       }
     });
   
-    // ------------------------------ slide-up script ------------------------------ //
+    // ------------------------------ slide-up  ------------------------------ //
   
     $(".scroll-up-btn").click(function () {
       $("html").animate({ scrollTop: 0 });
-      // ------------------------------ removing smooth scroll on slide-up button click ------------------------------ //
+
       $("html").css("scrollBehavior", "auto");
     });
   
     $(".navbar .menu li a").click(function () {
-      // ------------------------------ Smooth scroll on Menu Items click ------------------------------ //
+      // ------------------------------ Smooth scroll  ------------------------------ //
   
       $("html").css("scrollBehavior", "smooth");
     });
@@ -41,14 +41,14 @@ $(document).ready(function () {
     var typed = new Typed(".typing", {
       strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
       typeSpeed: 100,
-      backSpeed: 70,
+      backSpeed: 90,
       loop: true
     });
   
     var typed = new Typed(".typing-2", {
       strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
       typeSpeed: 200,
-      backSpeed: 70,
+      backSpeed: 90,
       loop: true
     });
   
