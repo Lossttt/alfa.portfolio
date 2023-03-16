@@ -39,16 +39,16 @@ $(document).ready(function () {
     // ------------------------------ Typing Text Animation ------------------------------ //
   
     var typed = new Typed(".typing", {
-      strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
+      strings: ["Front end Web developer", "Software Engineer", "Photographer", "Student"],
       typeSpeed: 100,
-      backSpeed: 90,
+      backSpeed: 100,
       loop: true
     });
   
     var typed = new Typed(".typing-2", {
-      strings: ["Front end Web developer", "Software Engineer", "Gym addict", "Photographer "],
-      typeSpeed: 200,
-      backSpeed: 90,
+      strings: ["Front end Web developer", "Software Engineer", "Photographer", "Student"],
+      typeSpeed: 100,
+      backSpeed: 100,
       loop: true
     });
   
